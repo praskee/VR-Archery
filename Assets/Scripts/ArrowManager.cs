@@ -50,14 +50,17 @@ public class ArrowManager : MonoBehaviour
 
     public void ThrowArrow()
     {
-        LastArrow = currentArrow;
-        currentArrow = null;
-        LastArrow.transform.parent = null;
-        LastArrow.GetComponent<Rigidbody>().isKinematic = false;
-        LastArrow.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-        LastArrow.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(controller);
-        hasArrow = false;
-        isAttached = false;
+        if (currentArrow != null)
+        {
+            LastArrow = currentArrow;
+            currentArrow = null;
+            LastArrow.transform.parent = null;
+            LastArrow.GetComponent<Rigidbody>().isKinematic = false;
+            LastArrow.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+            LastArrow.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(controller);
+            hasArrow = false;
+            isAttached = false;
+        }
     }
 
     private void Fire()
