@@ -64,7 +64,6 @@ public class ArrowManager : MonoBehaviour
             Rigidbody r = currentArrow.GetComponent<Rigidbody>();
             r.velocity = currentArrow.transform.forward * 25f * dist;
             r.useGravity = true;
-            currentArrow.GetComponent<Collider>().isTrigger = false;
             currentArrow = null;
             hasArrow = false;
             isAttached = false;
