@@ -57,7 +57,7 @@ public class ArrowManager : MonoBehaviour
     
     private void Fire()
     {
-        if (isAttached && OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) < 0)
+        if (isAttached && OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) <= 0)
         {
             float dist = (arrowStartPoint.transform.position - controler.transform.position).magnitude;
             currentArrow.transform.parent = null;
