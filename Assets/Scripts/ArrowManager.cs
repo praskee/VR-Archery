@@ -1,22 +1,18 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowManager : MonoBehaviour
 {
     private GameObject currentArrow;
-
     public static ArrowManager Instance;
-
     public OVRInput.Controller controller;
     public GameObject controler;
     public GameObject arrowPrefab;
     public GameObject LastArrow;
     public GameObject arrowStartPoint;
     public TextMesh debug;
-
     private bool hasArrow = false;
-
     private bool isAttached = false;
 
     void Awake()
@@ -47,22 +43,18 @@ public class ArrowManager : MonoBehaviour
         }
         else ThrowArrow();
     }
-
-    public void ThrowArrow()
+    
+    public void AttachArrow()
     {
-        if (currentArrow != null)
+        if (currentArrow == null)
         {
-            LastArrow = currentArrow;
-            currentArrow = null;
-            LastArrow.transform.parent = null;
-            LastArrow.GetComponent<Rigidbody>().isKinematic = false;
-            LastArrow.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
-            LastArrow.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(controller);
-            hasArrow = false;
-            isAttached = false;
+            currentArrow = Instantiate(arrowPrefab, controler.transform);
+            currentArrow.transform.localPosition = new Vector3(0.1f, 0f, 0.3f);
+            currentArrow.GetComponent<Rigidbody>().isKinematic = true;
+            hasArrow = true;
         }
     }
-
+    
     private void Fire()
     {
         if (isAttached && OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) < 0)
@@ -78,20 +70,19 @@ public class ArrowManager : MonoBehaviour
             isAttached = false;
         }
     }
-
-    public void playSound()
+    
+    public void ThrowArrow()
     {
-
-    }
-
-    public void AttachArrow()
-    {
-        if (currentArrow == null)
+        if (currentArrow != null)
         {
-            currentArrow = Instantiate(arrowPrefab, controler.transform);
-            currentArrow.transform.localPosition = new Vector3(0.1f, 0f, 0.3f);
-            currentArrow.GetComponent<Rigidbody>().isKinematic = true;
-            hasArrow = true;
+            LastArrow = currentArrow;
+            currentArrow = null;
+            LastArrow.transform.parent = null;
+            LastArrow.GetComponent<Rigidbody>().isKinematic = false;
+            LastArrow.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(controller);
+            LastArrow.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(controller);
+            hasArrow = false;
+            isAttached = false;
         }
     }
 
@@ -102,5 +93,10 @@ public class ArrowManager : MonoBehaviour
         currentArrow.transform.rotation = arrowStartPoint.transform.rotation;
 
         isAttached = true;
+    }
+    
+    public void playSound()
+    {
+
     }
 }
