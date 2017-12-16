@@ -5,20 +5,23 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     private bool isAttached = false;
-
     void OnTriggerStay()
     {
         blockArrow();
     }
 
-    void OnTriggerEnter()
+    void Update()
     {
-        blockArrow();
+        if (OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) == 0)
+        {
+            isAttached = false;
+        }
     }
 
     public void blockArrow()
     {
-        if (!isAttached && OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0)
+        //Debug.Log(OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger));
+        if (!isAttached && OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > .9f)
         {
             ArrowManager.Instance.AttachBowToArrow();
             isAttached = true;
