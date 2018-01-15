@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-Archery", "VR-Archery.csproj", "{5F78A9A1-234E-4036-038B-21F65DD15C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-Archery.Editor", "VR-Archery.Editor.csproj", "{3440CF52-2DB9-088F-4DA0-D91221D7896D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F78A9A1-234E-4036-038B-21F65DD15C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F78A9A1-234E-4036-038B-21F65DD15C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F78A9A1-234E-4036-038B-21F65DD15C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F78A9A1-234E-4036-038B-21F65DD15C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3440CF52-2DB9-088F-4DA0-D91221D7896D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3440CF52-2DB9-088F-4DA0-D91221D7896D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3440CF52-2DB9-088F-4DA0-D91221D7896D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3440CF52-2DB9-088F-4DA0-D91221D7896D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

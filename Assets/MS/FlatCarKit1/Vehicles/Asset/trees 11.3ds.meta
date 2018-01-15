@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 71d13c52076eea9459d896cdb01e274a
+timeCreated: 1513806698
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Winter_0
+    100004: Winter_1
+    100006: Winter_1_MeshPart0
+    100008: Winter_1_MeshPart1
+    100010: Winter_2
+    100012: Winter_2_MeshPart0
+    100014: Winter_2_MeshPart1
+    100016: Winter_3
+    100018: Winter_3_MeshPart0
+    100020: Winter_3_MeshPart1
+    100022: Winter_4
+    100024: Winter_4_MeshPart0
+    100026: Winter_4_MeshPart1
+    100028: Winter_5
+    100030: Winter_6
+    100032: Winter_7
+    100034: Winter_8
+    100036: Winter_8_MeshPart0
+    100038: Winter_8_MeshPart1
+    100040: Winter_9
+    400000: //RootNode
+    400002: Winter_0
+    400004: Winter_1
+    400006: Winter_1_MeshPart0
+    400008: Winter_1_MeshPart1
+    400010: Winter_2
+    400012: Winter_2_MeshPart0
+    400014: Winter_2_MeshPart1
+    400016: Winter_3
+    400018: Winter_3_MeshPart0
+    400020: Winter_3_MeshPart1
+    400022: Winter_4
+    400024: Winter_4_MeshPart0
+    400026: Winter_4_MeshPart1
+    400028: Winter_5
+    400030: Winter_6
+    400032: Winter_7
+    400034: Winter_8
+    400036: Winter_8_MeshPart0
+    400038: Winter_8_MeshPart1
+    400040: Winter_9
+    2300000: Winter_0
+    2300002: Winter_1_MeshPart0
+    2300004: Winter_1_MeshPart1
+    2300006: Winter_2_MeshPart0
+    2300008: Winter_2_MeshPart1
+    2300010: Winter_3_MeshPart0
+    2300012: Winter_3_MeshPart1
+    2300014: Winter_4_MeshPart0
+    2300016: Winter_4_MeshPart1
+    2300018: Winter_5
+    2300020: Winter_6
+    2300022: Winter_7
+    2300024: Winter_8_MeshPart0
+    2300026: Winter_8_MeshPart1
+    2300028: Winter_9
+    3300000: Winter_0
+    3300002: Winter_1_MeshPart0
+    3300004: Winter_1_MeshPart1
+    3300006: Winter_2_MeshPart0
+    3300008: Winter_2_MeshPart1
+    3300010: Winter_3_MeshPart0
+    3300012: Winter_3_MeshPart1
+    3300014: Winter_4_MeshPart0
+    3300016: Winter_4_MeshPart1
+    3300018: Winter_5
+    3300020: Winter_6
+    3300022: Winter_7
+    3300024: Winter_8_MeshPart0
+    3300026: Winter_8_MeshPart1
+    3300028: Winter_9
+    4300000: Winter_0
+    4300002: Winter_1_MeshPart0
+    4300004: Winter_1_MeshPart1
+    4300006: Winter_2_MeshPart0
+    4300008: Winter_2_MeshPart1
+    4300010: Winter_3_MeshPart0
+    4300012: Winter_3_MeshPart1
+    4300014: Winter_4_MeshPart0
+    4300016: Winter_4_MeshPart1
+    4300018: Winter_5
+    4300020: Winter_6
+    4300022: Winter_7
+    4300024: Winter_8_MeshPart0
+    4300026: Winter_8_MeshPart1
+    4300028: Winter_9
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunc_00
+    second: {fileID: 2100000, guid: 497fec5c22b144d4189b166d533e9aaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunc_01
+    second: {fileID: 2100000, guid: 0ab3e4699b8523f48bce3ca0681050a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunc_02
+    second: {fileID: 2100000, guid: 5456e26d6d33d1f4e8f974d2d71a4d64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunc__0
+    second: {fileID: 2100000, guid: bb1fad552f42ddc4fabd29ca10f10ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunc__1
+    second: {fileID: 2100000, guid: edc8583b94705c642b43a6e4bc9fd6f9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
